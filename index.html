@@ -5,24 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/style/main.css">
     <title>FITNESSHUB - Remake</title>
 </head>
 <body>
     
     <!-- Header -->
     <header>
-
+        <div class="header-with-sliders flex gap-5 fixed z-50 w-full bg-white px-10">
+            <div class="flex flex-col w-1/5 justify-center">
+                <div class="flex justify-center gap-2 pb-1">
+                    <label for="range-slider-1" class="text-center font-bold">0</label>
+                    <p class="text-center font-bold">/ 100%</p>
+                </div>
+                <input name="slider-1" class="w-full slider" id="range-slider-1" type="range" min="1" max="100" value="0">
+            </div>
+            <div class="flex flex-col w-1/5 justify-center">
+                <div class="flex justify-center gap-2 pb-1">
+                    <label for="range-slider-2" class="text-center font-bold">0</label>
+                    <p class="text-center font-bold">/ 100%</p>
+                </div>
+                <input name="slider-2" class="w-full slider" id="range-slider-2" type="range" min="1" max="100" value="0">
+            </div>
+            <div class="flex flex-col w-1/5 justify-center">
+                <div class="flex justify-center gap-2 pb-1">
+                    <label for="range-slider-3" class="text-center font-bold">0</label>
+                    <p class="text-center font-bold">/ 100%</p>
+                </div>
+                <input name="slider-3" class="w-full slider" id="range-slider-3" type="range" min="1" max="100" value="0">
+            </div>
+            <div class="flex flex-col w-1/5 justify-center">
+                <div class="flex justify-center gap-2 pb-1">
+                    <label for="range-slider-4" class="text-center font-bold">0</label>
+                    <p class="text-center font-bold">/ 100%</p>
+                </div>
+                <input name="slider-4" class="w-full slider" id="range-slider-4" type="range" min="1" max="100" value="0">
+            </div>
+            <div class="flex flex-col w-1/5 justify-center">
+                <div class="flex justify-center gap-2 pb-1">
+                    <label for="range-slider-5" class="text-center font-bold">0</label>
+                    <p class="text-center font-bold">/ 100%</p>
+                </div>
+                <input name="slider-5" class="w-full slider" id="range-slider-5" type="range" min="1" max="100" value="0">
+            </div>
+        </div>
     </header>
 
     <!-- Main -->
     <main>
-
+        <div class="font-bold text-5xl">
+            <!-- SCREEN WELCOME -->
+            <div class="w-screen h-screen sticky top-0 z-0 bg-cyan-200 border-t-2 border-black flex flex-col items-center">
+                <h1 class="main-page-title">FITNESSHUB</h1>
+            </div>
+            <!-- SCREEN # -->
+            <div class="sticky-section w-screen sticky top-0 z-0 bg-green-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-1">SOME KIND OF TEXT SCREEN 1</div>
+            <!-- SCREEN # -->
+            <div class="sticky-section w-screen sticky top-0 z-10 bg-purple-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-2">SOME KIND OF TEXT SCREEN 2</div>
+            <!-- SCREEN # -->
+            <div class="sticky-section w-screen sticky top-0 z-20 bg-blue-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-3">SOME KIND OF TEXT SCREEN 3</div>
+            <!-- SCREEN # -->
+            <div class="sticky-section w-screen sticky top-0 z-30 bg-red-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-4">SOME KIND OF TEXT SCREEN 4</div>
+            <!-- SCREEN # -->
+            <div class="sticky-section w-screen sticky top-0 z-40 bg-yellow-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-5">SOME KIND OF TEXT SCREEN 5</div>
+            <!-- SCREEN # -->
+            <div class="w-screen h-screen sticky top-0 z-50 bg-green-200 flex justify-center items-center border-t-2 border-black">END SCREEN</div>
+        </div>
     </main>
 
     <!-- Footer -->
     <footer>
 
     </footer>
-
+    
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
