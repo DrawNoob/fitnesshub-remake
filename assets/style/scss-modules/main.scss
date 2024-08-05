@@ -3,6 +3,34 @@
 }
 .main-page-title{
     position: relative;
-    top: 7vh;
-    font-size: 15vw;
+    top: 0;
+    height: max-content;
+    line-height: 100%;
+    font-size: 11vw;
+    z-index: 99;
+    font-family: 'Zen Dots';
+}
+.block-under-title{
+    height: 75vh;
+    width: 95%;
+    z-index: 0;
+    background: url(./../../../assets/images/FirstBG.webp);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 20px 20px 0 0 ;
+    @media (max-width: 1920px){
+        height: 75vh;
+        @media (max-width: 1820px){
+            height: 76vh;
+            @media (max-width: 1720px){
+                height: 80vh;
+                background-position: top center;
+                @media (max-width: 1440px){
+                    height: 82vh;
+                    background-position: top center;
+                }
+            }
+        }
+    }
 }

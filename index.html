@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style/main.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;400;700&family=IBM+Plex+Sans:wght@400;500;600&family=Zen+Dots&display=swap" rel="stylesheet">
     <title>FITNESSHUB - Remake</title>
 </head>
 <body>
@@ -14,35 +18,35 @@
     <header>
         <div class="header-with-sliders flex gap-5 fixed z-50 w-full bg-white px-10">
             <div class="flex flex-col w-1/5 justify-center">
-                <div class="flex justify-center gap-2 pb-1">
+                <div class="flex gap-2 pb-1">
                     <label for="range-slider-1" class="text-center font-bold">0</label>
                     <p class="text-center font-bold">/ 100%</p>
                 </div>
                 <input name="slider-1" class="w-full slider" id="range-slider-1" type="range" min="1" max="100" value="0">
             </div>
             <div class="flex flex-col w-1/5 justify-center">
-                <div class="flex justify-center gap-2 pb-1">
+                <div class="flex gap-2 pb-1">
                     <label for="range-slider-2" class="text-center font-bold">0</label>
                     <p class="text-center font-bold">/ 100%</p>
                 </div>
                 <input name="slider-2" class="w-full slider" id="range-slider-2" type="range" min="1" max="100" value="0">
             </div>
             <div class="flex flex-col w-1/5 justify-center">
-                <div class="flex justify-center gap-2 pb-1">
+                <div class="flex gap-2 pb-1">
                     <label for="range-slider-3" class="text-center font-bold">0</label>
                     <p class="text-center font-bold">/ 100%</p>
                 </div>
                 <input name="slider-3" class="w-full slider" id="range-slider-3" type="range" min="1" max="100" value="0">
             </div>
             <div class="flex flex-col w-1/5 justify-center">
-                <div class="flex justify-center gap-2 pb-1">
+                <div class="flex gap-2 pb-1">
                     <label for="range-slider-4" class="text-center font-bold">0</label>
                     <p class="text-center font-bold">/ 100%</p>
                 </div>
                 <input name="slider-4" class="w-full slider" id="range-slider-4" type="range" min="1" max="100" value="0">
             </div>
             <div class="flex flex-col w-1/5 justify-center">
-                <div class="flex justify-center gap-2 pb-1">
+                <div class="flex gap-2 pb-1">
                     <label for="range-slider-5" class="text-center font-bold">0</label>
                     <p class="text-center font-bold">/ 100%</p>
                 </div>
@@ -55,9 +59,12 @@
     <main>
         <div class="font-bold text-5xl">
             <!-- SCREEN WELCOME -->
-            <div class="w-screen h-screen sticky top-0 z-0 bg-cyan-200 border-t-2 border-black flex flex-col items-center">
-                <h1 class="main-page-title">FITNESSHUB</h1>
+            <div class="w-screen h-screen top-0 border-t-2 border-black flex flex-col items-center">
+                <h1 class="main-page-title sticky w-screen bg-white text-center">FITNESSHUB</h1>
+                <div class="block-under-title text-white fixed bottom-0"></div>
             </div>
+            <!-- SCREEN # -->
+            <div class="sticky-section w-screen sticky top-0 z-0 bg-green-500 flex justify-center items-center border-t-2 border-black">SOME KIND OF TEXT</div>
             <!-- SCREEN # -->
             <div class="sticky-section w-screen sticky top-0 z-0 bg-green-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-1">SOME KIND OF TEXT SCREEN 1</div>
             <!-- SCREEN # -->
@@ -78,6 +85,6 @@
 
     </footer>
     
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/progress-slider.js"></script>
 </body>
 </html>
