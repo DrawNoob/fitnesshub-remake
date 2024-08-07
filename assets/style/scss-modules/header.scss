@@ -1,5 +1,45 @@
+.main-container-header{
+    position: fixed;
+    top: 85vh;
+    transition: top 0.5s ease-in-out;
+    z-index: 99999;
+}
+// HEADER1 MENU __________________________________________________
+.header-menu{
+    width: max-content;
+    background: #222222;
+    padding: 14px;
+    border-radius: 8px;
+    transition: width 0.5s ease-in-out;
+    font-family: 'IBM Plex Mono', monospace;
+    .header-link{
+        color: white;
+        border: 1px solid #FFFFFF26;
+        border-radius: 8px;
+        font-size: 16px;
+        padding: 6px 28px;
+        &:nth-child(1){
+            background: #FB531F;
+        }
+    }
+    .header-btn{
+        transition: opacity 0.5s ease-in-out;
+        button{
+            background: #FB531F;
+            color: white;
+            border-radius: 8px;
+            font-size: 22px;
+            padding: 12px 32px;
+        }
+    }
+}
+
+// PROGRESS LINES _______________________________________________
 .header-with-sliders{
-    height: 7vh;
+    height: 6vh;
+    opacity: 0;
+    transition: width 0.5s ease-in-out;
+    border-bottom: 1px solid #222222;
 }
 input {
     margin-top: 5px;
@@ -15,28 +55,28 @@ input {
     background: none;
     cursor: pointer;
     overflow: hidden;
-  }
-  input:focus-visible,
-  input:hover{
+}
+input:focus-visible,
+input:hover{
     --p: 25%;
-  }
-  input:active,
-  input:focus-visible{
+}
+input:active,
+input:focus-visible{
     --_b: var(--s)
-  }
-  /* chromium */
-  input[type="range" i]::-webkit-slider-thumb{
+}
+/* chromium */
+input[type="range" i]::-webkit-slider-thumb{
     height: 3px;
-    aspect-ratio: 1;
+    aspect-ratio: 0.01;
     border-radius: none;
     border-image: linear-gradient(90deg,var(--_c) 50%,#cdcdcd 0) 0 1/calc(50% - var(--l)/2) 100vw/0 calc(100vw + var(--g));
     -webkit-appearance: none;
     appearance: none;
     transition: .3s;
     background: #cdcdcd;
-  }
-  /* Firefox */
-  input[type="range"]::-moz-range-thumb {
+}
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
     height: var(--s);
     width: var(--s);
     background: none;
@@ -45,9 +85,9 @@ input {
     appearance: none;
     transition: .3s;
     background: #cdcdcd;
-  }
-  @supports not (color: color-mix(in srgb,red,red)) {
+}
+@supports not (color: color-mix(in srgb,red,red)) {
     input {
-      --_c: var(--c);
+        --_c: var(--c);
     }
-  }
+}

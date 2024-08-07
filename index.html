@@ -16,41 +16,43 @@
     
     <!-- Header -->
     <header>
-        <div class="header-with-sliders flex gap-5 fixed z-50 w-full bg-white px-10">
-            <div class="flex flex-col w-1/5 justify-center">
-                <div class="flex gap-2 pb-1">
-                    <label for="range-slider-1" class="text-center font-bold">0</label>
-                    <p class="text-center font-bold">/ 100%</p>
+        <div class="w-full flex flex-col fixed main-container-header items-center transition-all duration-500 ease-in-out">
+            <!-- HEADER MENU -->
+            <div class="header-menu flex justify-between">
+                <div class="flex gap-4 justify-between header-links">
+                    <a class="header-link flex items-center justify-center" href="#">f.home</a>
+                    <a class="header-link flex items-center justify-center" href="#">about us</a>
+                    <a class="header-link flex items-center justify-center" href="#">services</a>
+                    <a class="header-link flex items-center justify-center" href="#">clubs</a>
+                    <a class="header-link flex items-center justify-center" href="#">our teams</a>
+                    <a class="header-link flex items-center justify-center" href="#">schelude</a>
                 </div>
-                <input name="slider-1" class="w-full slider" id="range-slider-1" type="range" min="1" max="100" value="0">
+                <div class="header-btn hidden transition-opacity duration-500 ease-in-out">
+                    <button>buy a season ticket</button>
+                </div>
             </div>
-            <div class="flex flex-col w-1/5 justify-center">
-                <div class="flex gap-2 pb-1">
-                    <label for="range-slider-2" class="text-center font-bold">0</label>
-                    <p class="text-center font-bold">/ 100%</p>
+            <!-- PROGRESS LINES -->
+            <div class="header-with-sliders gap-5 bg-white px-10 flex">
+                <div class="flex flex-col w-1/5 justify-center">
+                    <label for="#">About Us</label>
+                    <input name="slider-1" class="w-full slider" id="range-slider-1" type="range" min="1" max="100" value="0">
                 </div>
-                <input name="slider-2" class="w-full slider" id="range-slider-2" type="range" min="1" max="100" value="0">
-            </div>
-            <div class="flex flex-col w-1/5 justify-center">
-                <div class="flex gap-2 pb-1">
-                    <label for="range-slider-3" class="text-center font-bold">0</label>
-                    <p class="text-center font-bold">/ 100%</p>
+                <div class="flex flex-col w-1/5 justify-center">
+                    <label for="#">Our Services</label>
+                    <input name="slider-2" class="w-full slider" id="range-slider-2" type="range" min="1" max="100" value="0">
                 </div>
-                <input name="slider-3" class="w-full slider" id="range-slider-3" type="range" min="1" max="100" value="0">
-            </div>
-            <div class="flex flex-col w-1/5 justify-center">
-                <div class="flex gap-2 pb-1">
-                    <label for="range-slider-4" class="text-center font-bold">0</label>
-                    <p class="text-center font-bold">/ 100%</p>
+                <div class="flex flex-col w-1/5 justify-center">
+                    <label for="#">Name</label>
+                    <input name="slider-3" class="w-full slider" id="range-slider-3" type="range" min="1" max="100" value="0">
                 </div>
-                <input name="slider-4" class="w-full slider" id="range-slider-4" type="range" min="1" max="100" value="0">
-            </div>
-            <div class="flex flex-col w-1/5 justify-center">
-                <div class="flex gap-2 pb-1">
-                    <label for="range-slider-5" class="text-center font-bold">0</label>
-                    <p class="text-center font-bold">/ 100%</p>
+                <div class="flex flex-col w-1/5 justify-center">
+                    <label for="#">Name</label>
+                    <input name="slider-4" class="w-full slider" id="range-slider-4" type="range" min="1" max="100" value="0">
                 </div>
-                <input name="slider-5" class="w-full slider" id="range-slider-5" type="range" min="1" max="100" value="0">
+                <div class="flex flex-col w-1/5 justify-center">
+                    <label for="#">Name</label>
+                    <input name="slider-5" class="w-full slider" id="range-slider-5" type="range" min="1" max="100" value="0">
+                </div>
             </div>
         </div>
     </header>
@@ -58,25 +60,44 @@
     <!-- Main -->
     <main>
         <div class="font-bold text-5xl">
-            <!-- SCREEN WELCOME -->
-            <div class="w-screen h-screen top-0 border-t-2 border-black flex flex-col items-center">
-                <h1 class="main-page-title sticky w-screen bg-white text-center">FITNESSHUB</h1>
+            <!-- SCREEN TITLE -->
+            <div class="sticky-section z-0 flex flex-col">
+                <h1 class="main-page-title bg-white text-center">FITNESSHUB</h1>
                 <div class="block-under-title text-white fixed bottom-0"></div>
             </div>
+            <!-- SCREEN 1 -->
+            <div class="sticky-section z-0 flex flex-col" data-slider="range-slider-1">
+                <h2>Take the first step towards a healthier, stronger, and more confident you.</h2>
+                <div class="flex md:flex-row flex-col mt-24 items-start">
+                    <div class="scrn-1-left flex md:w-1/2 w-2/2 items-center gap-5">
+                        <span>01</span>
+                        <p class="uppercase">about us</p>
+                    </div>
+                    <div class="scrn-1-right md:w-1/2 w-2/2">
+                        <p>
+                            Looking for personalized attention and tailored fitness plans? Our experienced trainers provide one-on-one coaching and personalized training programs that are customized to your unique goals and abilities. <br><br>
+                            Join our fitness club today and embark on a transformative journey that will enhance your physical fitness, and empower you to live your best life. Together, let's unleash your full potential.
+                        </p>
+                    </div>
+                </div>
+            </div>
             <!-- SCREEN # -->
-            <div class="sticky-section w-screen sticky top-0 z-0 bg-green-500 flex justify-center items-center border-t-2 border-black">SOME KIND OF TEXT</div>
+            <div class="sticky-section z-0 flex flex-col" data-slider="range-slider-2">
+                <div class="flex justify-between scrn-2-top items-center">
+                    <p class="uppercase">our services</p>
+                    <span>02</span>
+                </div>
+            </div>
             <!-- SCREEN # -->
-            <div class="sticky-section w-screen sticky top-0 z-0 bg-green-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-1">SOME KIND OF TEXT SCREEN 1</div>
+            <div class="sticky-section z-10"></div>
             <!-- SCREEN # -->
-            <div class="sticky-section w-screen sticky top-0 z-10 bg-purple-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-2">SOME KIND OF TEXT SCREEN 2</div>
+            <div class="sticky-section z-20 flex bg-red-200" data-slider="range-slider-3">SOME KIND OF TEXT SCREEN 2</div>
             <!-- SCREEN # -->
-            <div class="sticky-section w-screen sticky top-0 z-20 bg-blue-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-3">SOME KIND OF TEXT SCREEN 3</div>
+            <div class="sticky-section z-30 flex bg-red-200" data-slider="range-slider-4">SOME KIND OF TEXT SCREEN 3</div>
             <!-- SCREEN # -->
-            <div class="sticky-section w-screen sticky top-0 z-30 bg-red-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-4">SOME KIND OF TEXT SCREEN 4</div>
+            <div class="sticky-section z-40 flex bg-red-200" data-slider="range-slider-5">SOME KIND OF TEXT SCREEN 4</div>
             <!-- SCREEN # -->
-            <div class="sticky-section w-screen sticky top-0 z-40 bg-yellow-200 flex justify-center items-center border-t-2 border-black" data-slider="range-slider-5">SOME KIND OF TEXT SCREEN 5</div>
-            <!-- SCREEN # -->
-            <div class="w-screen h-screen sticky top-0 z-50 bg-green-200 flex justify-center items-center border-t-2 border-black">END SCREEN</div>
+            <div class="h-screen sticky top-0 z-50 flex">END SCREEN</div>
         </div>
     </main>
 
@@ -86,5 +107,6 @@
     </footer>
     
     <script src="./assets/js/progress-slider.js"></script>
+    <script src="./assets/js/header-transform.js"></script>
 </body>
 </html>

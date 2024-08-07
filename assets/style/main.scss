@@ -1,6 +1,6 @@
 // SCSS Modules Imports
 @import "scss-modules/header.scss";
-@import "scss-modules/main.scss";
+@import "scss-modules/pages.scss";
 @import "scss-modules/footer.scss";
 @import "scss-modules/buttons.scss";
 @import "scss-modules/animations.scss";
@@ -57,7 +57,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Zen Dots';
     overflow-x: hidden !important;
 }
 .li {
