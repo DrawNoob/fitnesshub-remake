@@ -169,7 +169,7 @@
     // GIRL PART
     &:nth-child(4){
         position: relative;
-        padding-bottom: 200px;
+        padding-bottom: 140px;
         background: white;
         img{
             border-radius: 20px 20px 0 0;
@@ -238,6 +238,33 @@
                             font-size: 18px;
                         }
                     }
+                }
+            }
+        }
+        .huge-text{
+            border-radius: 16px 16px 0 0;
+            background: #222222;
+            padding: 40px;
+            span{
+                color: white;
+                border: 2px solid #FB531F;
+                border-radius: 24px;
+                padding: 9px 17px;
+                font-size: 18px;
+                font-weight: 300;
+            }
+            h3{
+                font-size: 11vw;
+                color: #FB531F;
+            }
+            p{
+                font-size: 20px;
+                color: white;
+                font-family: 'IBM Plex Mono', monospace;
+                line-height: 150%;
+                font-weight: 400;
+                @media (max-width: 768px){
+                    font-size: 18px;
                 }
             }
         }
