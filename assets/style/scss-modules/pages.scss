@@ -28,6 +28,9 @@
                 @media (max-width: 1440px){
                     height: 80vh;
                     background-position: top center;
+                    @media (max-width: 768px){
+                        display: none;
+                    }
                 }
             }
         }
@@ -35,15 +38,27 @@
 }
 .sticky-section{
     width: 95.5%;
-    height: 100vh;
+    min-height: 100vh;
+    height: max-content !important;
     margin: 0px auto;
     border-radius: 20px 20px 0 0;
     position: sticky;
     top: 17vh;
+    @media (max-width: 768px){
+        position: relative;
+        height: max-content;
+        border-radius: 0;
+        top: 2vh;
+    }
+    // WELCOME SCREEN
     &:nth-child(1){
         position: relative;
         top: 0;
+        @media (max-width: 768px){
+            min-height: max-content !important;
+        }
     }
+    // ABOUT US
     &:nth-child(2){
         background: #222222;
         padding: 40px;
@@ -78,6 +93,7 @@
             }
         }
     }
+    // OUR SERVICES
     &:nth-child(3){
         background: white;
         border: 1px solid #FB531F;
@@ -93,10 +109,137 @@
                 font-family: 'IBM Plex Mono', monospace;
             }
         }
+        .our-service-items{
+            gap: 1.333333%;
+            .our-service-item{
+                width: 24%;
+                margin-top: 30px;
+                border: 1px solid #FB531F;
+                border-radius: 16px;
+                min-height: 280px;
+                @media (max-width: 768px){
+                    width: 100%;
+                    min-height: 230px;
+                }
+                .our-services-item-title{
+                    padding-bottom: 12px;
+                    font-size: 18px;
+                    border-bottom: 1px solid #FB531F;
+                    text-transform: uppercase;
+                    @media (max-width: 1440px){
+                        font-size: 16px;
+                    }
+                }
+                .our-service-item-description{
+                    font-size: 18px;
+                    color: #FB531F;
+                    line-height: 140%;
+                    font-weight: 400;
+                    padding-bottom: 20px;
+                    @media (max-width: 1440px){
+                        font-size: 16px;
+                    }
+                }
+                .our-service-btns{
+                    button{
+                        border-radius: 12px;
+                        padding: 14px 20px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        @media (max-width: 1440px){
+                            padding: 12px 16px;
+                            @media (max-width: 768px){
+                                padding: 8px 10px;
+                            }
+                        }
+
+                        &:nth-child(1){
+                            background: #222222;
+                            color: white;
+                        }
+                        &:nth-child(2){
+                            border: 1px solid #222222;
+                            color: #222222;
+                        }
+                    }
+                }
+            }
+        }
     }
+    // GIRL PART
     &:nth-child(4){
-        background: url(./../../assets/images/Girl.webp);
-        background-size: cover;
-        background-position: center;
+        position: relative;
+        padding-bottom: 200px;
+        background: white;
+        img{
+            border-radius: 20px 20px 0 0;
+        }
+        .under-image-text{
+            padding: 12px 0; 
+            border-bottom: 1px solid #FB531F;
+            p{
+                color: #FB531F;
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+        .description-girl-part{
+            color: #222222;
+            h4{
+                font-size: 64px;
+                line-height: 120%;
+                font-weight: 400;
+                @media (max-width: 1680px){
+                    font-size: 54px;
+                    @media (max-width: 1440px){
+                        font-size: 48px;
+                    }
+                }
+            }
+            p{
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 150%;
+                font-family: 'IBM Plex Mono', monospace;
+                @media (max-width: 1680px){
+                    font-size: 24px;
+                    @media (max-width: 1440px){
+                        font-size: 18px;
+                    }
+                }
+                span{
+                    color: #FB531F;
+                }
+            }
+        }
+        .swiper-slide{
+            .slide-item-description{
+                border: 1px solid #FB531F;
+                border-top: none;
+                border-radius: 0 0 20px 20px;
+
+                padding: 26px 16px;
+                .slide-title{
+                    font-size: 20px;
+                    border-bottom: 1px solid #FB531F;
+                    padding-bottom: 10px;
+                }
+                .date-slide{
+                    img{
+                        margin-top: 10px;
+                    }
+                    p{
+                        font-size: 22px;
+                        color: #222222;
+                        font-family: 'IBM Plex Mono', monospace;
+                        line-height: 140%;
+                        font-weight: 400;
+                        @media (max-width: 1440px){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

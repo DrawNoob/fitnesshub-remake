@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +66,7 @@
                 <h1 class="main-page-title bg-white text-center">FITNESSHUB</h1>
                 <div class="block-under-title text-white fixed bottom-0"></div>
             </div>
-            <!-- SCREEN 1 -->
+            <!-- SCREEN ABOUT US -->
             <div class="sticky-section z-0 flex flex-col" data-slider="range-slider-1">
                 <h2>Take the first step towards a healthier, stronger, and more confident you.</h2>
                 <div class="flex md:flex-row flex-col mt-24 items-start">
@@ -81,15 +82,224 @@
                     </div>
                 </div>
             </div>
-            <!-- SCREEN # -->
+            <!-- SCREEN OUR SERVICE -->
             <div class="sticky-section z-0 flex flex-col" data-slider="range-slider-2">
                 <div class="flex justify-between scrn-2-top items-center">
                     <p class="uppercase">our services</p>
                     <span>02</span>
                 </div>
+                <div class="flex flex-wrap our-service-items">
+                    <!-- Item -->
+                    <div class="flex flex-col p-5 our-service-item">
+                        <div class="flex justify-between our-services-item-title">
+                            <p>PERSONAL TRAINING</p>
+                            <p>1</p>
+                        </div>
+                        <div class="flex h-full flex-col justify-between mt-4">
+                            <p class="our-service-item-description">The personal trainer is the guarantee of the result!</p>
+                            <div class="flex justify-between w-full gap-5 our-service-btns">
+                                <button class="w-3/5">buy a ticket</button>
+                                <button class="w-2/5">explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex flex-col p-5 our-service-item">
+                        <div class="flex justify-between our-services-item-title">
+                            <p>GROUP STUDIES</p>
+                            <p>2</p>
+                        </div>
+                        <div class="flex h-full flex-col justify-between mt-4">
+                            <p class="our-service-item-description">Group training according to the trainers' original methods.</p>
+                            <div class="flex justify-between w-full gap-5 our-service-btns">
+                                <button class="w-3/5">buy a ticket</button>
+                                <button class="w-2/5">explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex flex-col p-5 our-service-item">
+                        <div class="flex justify-between our-services-item-title">
+                            <p>swimming pool</p>
+                            <p>3</p>
+                        </div>
+                        <div class="flex h-full flex-col justify-between mt-4">
+                            <p class="our-service-item-description">Five stages of water purification, ozone and ultraviolet disinfection. Zones for warm-up, personal and group training.</p>
+                            <div class="flex justify-between w-full gap-5 our-service-btns">
+                                <button class="w-3/5">buy a ticket</button>
+                                <button class="w-2/5">explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex flex-col p-5 our-service-item">
+                        <div class="flex justify-between our-services-item-title">
+                            <p>SOLARIUM</p>
+                            <p>4</p>
+                        </div>
+                        <div class="flex h-full flex-col justify-between mt-4">
+                            <p class="our-service-item-description">Ergoline Excellence 900 series premium horizontal solarium.</p>
+                            <div class="flex justify-between w-full gap-5 our-service-btns">
+                                <button class="w-3/5">buy a ticket</button>
+                                <button class="w-2/5">explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex flex-col p-5 our-service-item">
+                        <div class="flex justify-between our-services-item-title">
+                            <p>FINISH SAUNA</p>
+                            <p>5</p>
+                        </div>
+                        <div class="flex h-full flex-col justify-between mt-4">
+                            <p class="our-service-item-description">An excellent way out for those who like to steam and improve their health!</p>
+                            <div class="flex justify-between w-full gap-5 our-service-btns">
+                                <button class="w-3/5">buy a ticket</button>
+                                <button class="w-2/5">explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex flex-col p-5 our-service-item">
+                        <div class="flex justify-between our-services-item-title">
+                            <p>SPORTS BAR</p>
+                            <p>6</p>
+                        </div>
+                        <div class="flex h-full flex-col justify-between mt-4">
+                            <p class="our-service-item-description">Maximum pleasure from your training!</p>
+                            <div class="flex justify-between w-full gap-5 our-service-btns">
+                                <button class="w-3/5">buy a ticket</button>
+                                <button class="w-2/5">explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex flex-col p-5 our-service-item">
+                        <div class="flex justify-between our-services-item-title">
+                            <p>box</p>
+                            <p>7</p>
+                        </div>
+                        <div class="flex h-full flex-col justify-between mt-4">
+                            <p class="our-service-item-description">Classic combat programs: boxing, kickboxing, hand-to-hand combat and others.</p>
+                            <div class="flex justify-between w-full gap-5 our-service-btns">
+                                <button class="w-3/5">buy a ticket</button>
+                                <button class="w-2/5">explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- SCREEN # -->
-            <div class="sticky-section z-10"></div>
+            <!-- SCREEN GIRL PART -->
+            <div class="sticky-section z-10">
+                <img src="./assets/images/Girl.webp" alt="Girl">
+                <div class="flex justify-between under-image-text">
+                    <p>Transforming for growth</p>
+                    <p>Unleashing Potential</p>
+                </div>
+                <div class="flex md:flex-row flex-col description-girl-part py-20">
+                    <h4 class="md:w-1/2 w-2/2 uppercase">If you don’t try, you will not see results</h4>
+                    <p class="md:w-1/2 w-2/2">
+                        We are your playground for training and inspiration. <br><br>
+                        When we talk about sports, either a bad experience comes to mind, or a photo of super-strong people in perfect shape and with muscles the size of a Smart car. <br><br>
+                        In our gym, trainers listen to the person and do not push to do one more approach. <span>Cultural :)</span>
+                    </p>
+                </div>
+                <!-- RUNNING LINE NEED TO ADD ------------------------------------------------------------------------------------------------>
+                <div class="swiper w-full">
+                    <div class="swiper-wrapper w-full">
+                        <!-- Slides Item -->
+                        <div class="swiper-slide flex flex-col">
+                            <img class="w-full" src="./assets/images/Slide Image.png" alt="Image Slide">
+                            <div class="flex flex-col slide-item-description">
+                                <div class="flex justify-between slide-title items-center">
+                                    <p>FITHUB 1</p>
+                                    <img src="./assets/images/ArrowLeft.svg" alt="Arrow">
+                                </div>
+                                <div class="flex justify-between date-slide pt-6 items-start">
+                                    <img src="./assets/images/ico1.svg" alt="Icon">
+                                    <p>Avenue Sciences 11, <br> Kyiv, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between date-slide pt-6 items-start">
+                                    <img src="./assets/images/ico2.svg" alt="Icon">
+                                    <p>Mon-Fri 07:00-22:00 <br> Sat-Sun 09:00-20:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides Item -->
+                        <div class="swiper-slide flex flex-col">
+                            <img class="w-full" src="./assets/images/Slide Image.png" alt="Image Slide">
+                            <div class="flex flex-col slide-item-description">
+                                <div class="flex justify-between slide-title items-center">
+                                    <p>FITHUB 2</p>
+                                    <img src="./assets/images/ArrowLeft.svg" alt="Arrow">
+                                </div>
+                                <div class="flex justify-between date-slide pt-6 items-start">
+                                    <img src="./assets/images/ico1.svg" alt="Icon">
+                                    <p>Avenue Sciences 11, <br> Kyiv, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between date-slide pt-6 items-start">
+                                    <img src="./assets/images/ico2.svg" alt="Icon">
+                                    <p>Mon-Fri 07:00-22:00 <br> Sat-Sun 09:00-20:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides Item -->
+                        <div class="swiper-slide flex flex-col">
+                            <img class="w-full" src="./assets/images/Slide Image.png" alt="Image Slide">
+                            <div class="flex flex-col slide-item-description">
+                                <div class="flex justify-between slide-title items-center">
+                                    <p>FITHUB 3</p>
+                                    <img src="./assets/images/ArrowLeft.svg" alt="Arrow">
+                                </div>
+                                <div class="flex justify-between date-slide pt-6 items-start">
+                                    <img src="./assets/images/ico1.svg" alt="Icon">
+                                    <p>Avenue Sciences 11, <br> Kyiv, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between date-slide pt-6 items-start">
+                                    <img src="./assets/images/ico2.svg" alt="Icon">
+                                    <p>Mon-Fri 07:00-22:00 <br> Sat-Sun 09:00-20:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides Item -->
+                        <div class="swiper-slide flex flex-col">
+                            <img class="w-full" src="./assets/images/Slide Image.png" alt="Image Slide">
+                            <div class="flex flex-col slide-item-description">
+                                <div class="flex justify-between slide-title items-center">
+                                    <p>FITHUB 4</p>
+                                    <img src="./assets/images/ArrowLeft.svg" alt="Arrow">
+                                </div>
+                                <div class="flex justify-between date-slide pt-6 items-start">
+                                    <img src="./assets/images/ico1.svg" alt="Icon">
+                                    <p>Avenue Sciences 11, <br> Kyiv, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between date-slide pt-6 items-start">
+                                    <img src="./assets/images/ico2.svg" alt="Icon">
+                                    <p>Mon-Fri 07:00-22:00 <br> Sat-Sun 09:00-20:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides Item -->
+                        <div class="swiper-slide flex flex-col">
+                            <img class="w-full" src="./assets/images/Slide Image.png" alt="Image Slide">
+                            <div class="flex flex-col slide-item-description">
+                                <div class="flex justify-between slide-title items-center">
+                                    <p>FITHUB 5</p>
+                                    <img src="./assets/images/ArrowLeft.svg" alt="Arrow">
+                                </div>
+                                <div class="flex justify-between date-slide pt-6 items-start">
+                                    <img src="./assets/images/ico1.svg" alt="Icon">
+                                    <p>Avenue Sciences 11, <br> Kyiv, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between date-slide pt-6 items-start">
+                                    <img src="./assets/images/ico2.svg" alt="Icon">
+                                    <p>Mon-Fri 07:00-22:00 <br> Sat-Sun 09:00-20:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- SCREEN # -->
             <div class="sticky-section z-20 flex bg-red-200" data-slider="range-slider-3">SOME KIND OF TEXT SCREEN 2</div>
             <!-- SCREEN # -->
@@ -108,5 +318,7 @@
     
     <script src="./assets/js/progress-slider.js"></script>
     <script src="./assets/js/header-transform.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-sliders.js"></script>
 </body>
 </html>

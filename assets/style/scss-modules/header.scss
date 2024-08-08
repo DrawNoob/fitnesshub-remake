@@ -3,6 +3,9 @@
     top: 85vh;
     transition: top 0.5s ease-in-out;
     z-index: 99999;
+    @media (max-width: 768px){
+        display: none;
+    }
 }
 // HEADER1 MENU __________________________________________________
 .header-menu{
