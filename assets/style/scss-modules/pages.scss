@@ -169,7 +169,6 @@
     // GIRL PART
     &:nth-child(4){
         position: relative;
-        padding-bottom: 140px;
         background: white;
         img{
             border-radius: 20px 20px 0 0;
@@ -268,5 +267,62 @@
                 }
             }
         }
+    }
+    // OUR TEAM
+    &:nth-child(5){
+        position: relative;
+        background: white;
+        .team-title-container{
+            background: white;
+            z-index: 2;
+            position: sticky;
+            top: 0vh;
+            .team-for-white{
+                padding: 32px;
+                border: 1px solid #222222;
+                border-radius: 20px 20px 0 0;
+                border-bottom: none;
+                padding-bottom: 0;
+                margin-top: 17vh;
+                .team-title{
+                    border-bottom: 1px solid #222222;
+                    padding-bottom: 20px;
+                    p{
+                        color: #222222;
+                    }
+                    span{
+                        border: 2px solid #FB531F;
+                        border-radius: 12px;
+                        padding: 9px 17px;
+                    }
+                }
+            }
+        }
+        .team-members-container{
+            padding: 32px;
+            border-left: 1px solid #222222;
+            border-right: 1px solid #222222;
+            z-index: 1;
+            .team-block{
+                height: max-content !important;
+                padding-bottom: 120px;
+                gap: 2.666666666%;
+                .team-member{
+                    border-radius: 12px;
+                    border: 1px solid #222222;
+                    width: 23%;
+                    height: max-content;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // 
+    &:nth-child(6){
+        padding: 32px;
+        border: 1px solid #222222;
+        border-radius: 20px 20px 0 0;
     }
 }
