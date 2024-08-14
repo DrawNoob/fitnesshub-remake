@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             headerLinks.style.justifyContent = 'start';
         } else {
             mainHeader.style.top = '85vh';
-            headerMenu.style.width = '50%';
+            headerMenu.style.width = 'max-content';
             headerMenu.style.borderRadius = '8px';
             headerBtn.classList.add('hidden');
             headerRange.style.width = '0%';

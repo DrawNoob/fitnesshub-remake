@@ -17,7 +17,7 @@
     
     <!-- Header -->
     <header>
-        <div class="w-full flex flex-col fixed main-container-header items-center transition-all duration-500 ease-in-out">
+        <div class="mob-none w-full flex flex-col fixed main-container-header items-center transition-all duration-500 ease-in-out">
             <!-- HEADER MENU -->
             <div class="header-menu flex justify-between">
                 <div class="flex gap-4 justify-between header-links">
@@ -43,15 +43,15 @@
                     <input name="slider-2" class="w-full slider" id="range-slider-2" type="range" min="1" max="100" value="0">
                 </div>
                 <div class="flex flex-col w-1/5 justify-center">
-                    <label for="#">Name</label>
+                    <label for="#">Location</label>
                     <input name="slider-3" class="w-full slider" id="range-slider-3" type="range" min="1" max="100" value="0">
                 </div>
                 <div class="flex flex-col w-1/5 justify-center">
-                    <label for="#">Name</label>
+                    <label for="#">Our Team</label>
                     <input name="slider-4" class="w-full slider" id="range-slider-4" type="range" min="1" max="100" value="0">
                 </div>
                 <div class="flex flex-col w-1/5 justify-center">
-                    <label for="#">Name</label>
+                    <label for="#">Social Media</label>
                     <input name="slider-5" class="w-full slider" id="range-slider-5" type="range" min="1" max="100" value="0">
                 </div>
             </div>
@@ -69,7 +69,7 @@
             <!-- SCREEN ABOUT US -->
             <div class="sticky-section z-0 flex flex-col" data-slider="range-slider-1">
                 <h2>Take the first step towards a healthier, stronger, and more confident you.</h2>
-                <div class="flex md:flex-row flex-col mt-24 items-start">
+                <div class="flex md:flex-row flex-col md:mt-24 mt-10 items-start">
                     <div class="scrn-1-left flex md:w-1/2 w-2/2 items-center gap-5">
                         <span>01</span>
                         <p class="uppercase">about us</p>
@@ -190,15 +190,15 @@
                 </div>
             </div>
             <!-- SCREEN GIRL PART -->
-            <div class="sticky-section z-10">
+            <div class="sticky-section z-10" data-slider="range-slider-3">
                 <img src="./assets/images/Girl.webp" alt="Girl">
-                <div class="flex justify-between under-image-text">
-                    <p>Transforming for growth</p>
-                    <p>Unleashing Potential</p>
+                <div class="flex md:flex-row flex-col md:text-start text-center justify-between under-image-text">
+                    <p class="md:py-0 py-3">Transforming for growth</p>
+                    <p class="md:py-0 py-3">Unleashing Potential</p>
                 </div>
-                <div class="flex md:flex-row flex-col description-girl-part py-20">
-                    <h4 class="md:w-1/2 w-2/2 uppercase">If you don’t try, you will not see results</h4>
-                    <p class="md:w-1/2 w-2/2">
+                <div class="flex md:flex-row flex-col description-girl-part md:py-20 py-10">
+                    <h4 class="md:w-1/2 w-2/2 uppercase md:text-start text-center">If you don’t try, you will not see results</h4>
+                    <p class="md:w-1/2 w-2/2 md:pt-0 pt-5 md:text-start text-center">
                         We are your playground for training and inspiration. <br><br>
                         When we talk about sports, either a bad experience comes to mind, or a photo of super-strong people in perfect shape and with muscles the size of a Smart car. <br><br>
                         In our gym, trainers listen to the person and do not push to do one more approach. <span>Cultural :)</span>
@@ -304,19 +304,19 @@
                         <span>03</span>
                         <h3 class="uppercase">WE ARE</h3>
                     </div>
-                    <div class="flex justify-between items-center border-b-2 py-10 border-orange-500">
-                        <p>Thousands of certified specialists, participants of the Olympic <br> 
-                        Games, world and European champions, sports masters who <br>
+                    <div class="flex md:flex-row flex-col justify-between items-center border-b-2 py-10 border-orange-500">
+                        <p class="md:text-start text-center">Thousands of certified specialists, participants of the Olympic <br class="mob-none"> 
+                        Games, world and European champions, sports masters who <br class="mob-none">
                         will help you achieve your goal</p>
-                        <h3 class="uppercase">your</h3>
+                        <h3 class="uppercase md:pt-0 pt-5">your</h3>
                     </div>
                     <div class="flex justify-end pt-10">
                         <h3 class="uppercase">mentors</h3>
                     </div>
                 </div>
             </div>
-            <!-- SCREEN # -->
-            <div class="sticky-section z-20 flex flex-col " data-slider="range-slider-3">
+            <!-- SCREEN OUR TEAM -->
+            <div class="sticky-section z-20 flex flex-col " data-slider="range-slider-4">
                 <div class="team-title-container">
                     <div class="team-for-white">
                         <div class="flex justify-between items-center team-title">
@@ -351,18 +351,92 @@
                     </div>
                 </div>
             </div>
-            <!-- SCREEN # -->
-            <div class="sticky-section z-30 flex bg-red-200" data-slider="range-slider-4">SOME KIND OF TEXT SCREEN 3</div>
-            <!-- SCREEN # -->
-            <div class="sticky-section z-40 flex bg-red-200" data-slider="range-slider-5">SOME KIND OF TEXT SCREEN 4</div>
-            <!-- SCREEN # -->
-            <div class="h-screen sticky top-0 z-50 flex">END SCREEN</div>
+            <!-- SCREEN LEGS -->
+            <div class="sticky-section z-30 flex justify-center items-center">
+                <p class="text-center">IMAGINE WHAT YOU COULD ACHIEVE IN <br> JUST 30-60 DAYS</p>
+            </div>
+            <!-- SCREEN SOCIAL MEDIA -->
+            <div class="sticky-section z-40 flex flex-col" data-slider="range-slider-5">
+                <div class="flex justify-between items-center p-8">
+                    <h3>ready</h3>
+                    <img src="./assets/images/line1.png" alt="#">
+                    <h3>to</h3>
+                </div>
+                <div class="flex justify-between items-center p-8">
+                    <h3>work</h3>
+                    <img src="./assets/images/line2.png" alt="#">
+                    <h3>with</h3>
+                </div>
+                <div class="flex justify-between items-center p-8">
+                    <img src="./assets/images/line3.png" alt="#">
+                    <h3>us?</h3>
+                </div>
+                <div class="border-t-2 border-white w-full py-4">
+                    <div class="flex justify-between w-full px-4 mob-none">
+                        <p>tiktok</p>
+                        <p>-</p>
+                        <p>youtube</p>
+                        <p>-</p>
+                        <p>instagram</p>
+                        <p>-</p>
+                        <p>facebook</p>
+                        <p>-</p>
+                        <p>tiktok</p>
+                        <p>-</p>
+                        <p>youtube</p>
+                        <p>-</p>
+                        <p>instagram</p>
+                        <p>-</p>
+                        <p>facebook</p>
+                        <p>-</p>
+                        <p>tiktok</p>
+                        <p>-</p>
+                        <p>youtube</p>
+                        <p>-</p>
+                        <p>instagram</p>
+                        <p>-</p>
+                        <p>facebook</p>
+                        <p>-</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer>
-
+        <div class="footer-content flex flex-col justify-between">
+            <div class="flex md:flex-row flex-col justify-between">
+                <div class="flex flex-col md:w-3/12 w-12/12">
+                    <h4 class="footer-title">FITNESSHUB</h4>
+                    <p>We are your playground for training and inspiration</p>
+                </div>
+                <div class="flex flex-col md:w-2/12 w-12/12">
+                    <h5 class="uppercase">company</h5>
+                    <a href="#">home</a>
+                    <a href="#">about us</a>
+                    <a href="#">services</a>
+                    <a href="#">our team</a>
+                </div>
+                <div class="flex flex-col md:w-3/12 w-12/12">
+                    <h5 class="uppercase">information</h5>
+                    <a href="#">clubs</a>
+                    <a href="#">shchelude</a>
+                    <a href="#">terms & conditions</a>
+                    <a href="#">privacy policy</a>
+                </div>
+                <div class="flex flex-col md:w-2/12 w-12/12">
+                    <h5 class="uppercase">contact</h5>
+                    <a href="#">(852) 6323 1213</a>
+                    <a href="#">fitnesshub@coahing.com</a>
+                    <a href="#">6B Richview Terrace 26-50A square street Sheung Wan HK</a>
+                </div>
+            </div>
+            <div class="flex justify-between md:flex-row flex-col footer-by">
+                <p>© 2023 Nu Performance. All Rights Reserved</p>
+                <p>by <span>LTIA SOLUTIONS</span></p>
+            </div>
+        </div>
     </footer>
     
     <script src="./assets/js/progress-slider.js"></script>
