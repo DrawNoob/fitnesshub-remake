@@ -1,5 +1,6 @@
 .sticky-section{
     height: 93vh;
+    background: white;
 }
 .main-page-title{
     position: relative;
@@ -10,7 +11,7 @@
     z-index: 99;
 }
 .block-under-title{
-    height: 77vh;
+    height: 68vh;
     width: 95.5%;
     z-index: 0;
     background: url(./../../../assets/images/FirstBG.webp);
@@ -19,9 +20,9 @@
     border: 2px solid black;
     border-radius: 20px 20px 0 0 ;
     @media (max-width: 1920px){
-        height: 77vh;
+        height: 68vh;
         @media (max-width: 1820px){
-            height: 76vh;
+            height: 70vh;
             @media (max-width: 1720px){
                 height: 80vh;
                 background-position: top center;
@@ -35,6 +36,34 @@
             }
         }
     }
+}
+.marquee{
+    position: fixed;
+    top: 23vh;
+    height: 5.5vh;
+    width: 95.5%;
+    .track{
+        animation: marquee 25s linear infinite;
+        .line-text{
+            font-size: 24px;
+            color: #FB531F !important;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 700;
+            @media (max-width: 1440px){
+                font-size: 18px;
+                @media (max-width: 768px){
+                    font-size: 14px;
+                }
+            }
+            span{
+                color: #222222 !important;
+            }
+        }
+    }
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 .sticky-section{
     width: 95.5%;
