@@ -367,6 +367,9 @@
     &:nth-child(7){
         min-height: 85vh;
         background: #FB531F;
+        @media (max-width: 1280px){
+            min-height: max-content;
+        }
         h3{
             font-size: 10.7vw;
             color: white;
@@ -379,6 +382,9 @@
                     font-size: 9vw;
                     @media (max-width: 1280px){
                         font-size: 7vw;
+                        @media (max-width: 768px){
+                            font-size: 12vw;
+                        }
                     }
                 }
             }
@@ -437,6 +443,9 @@ footer{
             font-weight: 400;
             font-size: 24px;
             padding-bottom: 40px;
+            @media (max-width: 768px){
+                margin-top: 30px;
+            }
         }
         p{
             font-family: 'IBM Plex Mono', monospace;
@@ -464,6 +473,9 @@ footer{
         .footer-by{
             border-top: 2px solid #FB531F;
             padding-top: 14px;
+            @media (max-width: 768px){
+                margin-top: 30px;
+            }
             p{
                 font-family: 'IBM Plex Mono', monospace;
                 font-size: 22px;

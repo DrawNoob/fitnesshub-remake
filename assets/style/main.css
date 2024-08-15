@@ -514,6 +514,11 @@ input[type=range]::-moz-range-thumb {
   min-height: 85vh;
   background: #FB531F;
 }
+@media (max-width: 1280px) {
+  .sticky-section:nth-child(7) {
+    min-height: max-content;
+  }
+}
 .sticky-section:nth-child(7) h3 {
   font-size: 10.7vw;
   color: white;
@@ -534,6 +539,11 @@ input[type=range]::-moz-range-thumb {
 @media (max-width: 1680px) and (max-width: 1440px) and (max-width: 1280px) {
   .sticky-section:nth-child(7) h3 {
     font-size: 7vw;
+  }
+}
+@media (max-width: 1680px) and (max-width: 1440px) and (max-width: 1280px) and (max-width: 768px) {
+  .sticky-section:nth-child(7) h3 {
+    font-size: 12vw;
   }
 }
 .sticky-section:nth-child(7) img {
@@ -597,6 +607,11 @@ footer .footer-content h5 {
   font-size: 24px;
   padding-bottom: 40px;
 }
+@media (max-width: 768px) {
+  footer .footer-content h5 {
+    margin-top: 30px;
+  }
+}
 footer .footer-content p {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
@@ -627,6 +642,11 @@ footer .footer-content a:hover {
 footer .footer-content .footer-by {
   border-top: 2px solid #FB531F;
   padding-top: 14px;
+}
+@media (max-width: 768px) {
+  footer .footer-content .footer-by {
+    margin-top: 30px;
+  }
 }
 footer .footer-content .footer-by p {
   font-family: "IBM Plex Mono", monospace;
