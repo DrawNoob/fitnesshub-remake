@@ -21,7 +21,11 @@
         border-radius: 8px;
         font-size: 16px;
         padding: 6px 28px;
+        transition: 0.2s all;
         &:nth-child(1){
+            background: #FB531F;
+        }
+        &:hover{
             background: #FB531F;
         }
     }
@@ -33,6 +37,11 @@
             border-radius: 8px;
             font-size: 22px;
             padding: 12px 32px;
+            transition: 0.2s all;
+            &:hover{
+                background: white;
+                color: black;
+            }
         }
     }
 }

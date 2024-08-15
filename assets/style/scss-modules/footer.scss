@@ -1,0 +1,80 @@
+// FOOTER
+footer{
+    width: 95.5%;
+    min-height: 70vh;
+    height: max-content !important;
+    margin: 0px auto;
+    background: linear-gradient(to bottom, #FB531F, white);
+    position: relative;
+    @media (max-width: 768px){
+        position: relative;
+        height: max-content;
+        border-radius: 0;
+        top: 2vh;
+    }
+    .footer-content{
+        height: 100%;
+        border-radius: 20px;
+        background: white;
+        min-height: 70vh;
+        height: max-content !important;
+        border: 2px solid #FB531F;
+        padding: 32px;
+        .footer-title{
+            font-size: 32px;
+            font-weight: 400;
+            padding-bottom: 30px;
+        }
+        h5{
+            font-weight: 400;
+            font-size: 24px;
+            padding-bottom: 40px;
+            @media (max-width: 768px){
+                margin-top: 30px;
+            }
+        }
+        p{
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 150%;
+            padding-top: 8px;
+                @media (max-width: 1440px){
+                    font-size: 18px;
+                }
+            }
+        a{
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 400;
+            font-size: 22px;
+            padding: 8px 0;
+            transition: 0.2s all;
+                @media (max-width: 1440px){
+                    font-size: 18px;
+                }
+            &:hover{
+                color: #FB531F;
+                padding-left: 20px;
+                border-left: 5px solid #FB531F;
+            }
+        }
+        .footer-by{
+            border-top: 2px solid #FB531F;
+            padding-top: 14px;
+            @media (max-width: 768px){
+                margin-top: 30px;
+            }
+            p{
+                font-family: 'IBM Plex Mono', monospace;
+                font-size: 22px;
+                span{
+                    color: #FB531F;
+                    font-weight: 700;
+                }
+                @media (max-width: 1440px){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

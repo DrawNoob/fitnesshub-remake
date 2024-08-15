@@ -24,8 +24,12 @@
   border-radius: 8px;
   font-size: 16px;
   padding: 6px 28px;
+  transition: 0.2s all;
 }
 .header-menu .header-link:nth-child(1) {
+  background: #FB531F;
+}
+.header-menu .header-link:hover {
   background: #FB531F;
 }
 .header-menu .header-btn {
@@ -37,6 +41,11 @@
   border-radius: 8px;
   font-size: 22px;
   padding: 12px 32px;
+  transition: 0.2s all;
+}
+.header-menu .header-btn button:hover {
+  background: white;
+  color: black;
 }
 
 .header-with-sliders {
@@ -180,6 +189,31 @@ input[type=range]::-moz-range-thumb {
 }
 .marquee .track .line-text span {
   color: #222222 !important;
+}
+
+.marquee2 {
+  position: relative;
+  height: 5.5vh;
+  width: 95.5%;
+}
+.marquee2 .track {
+  animation: marquee 25s linear infinite;
+}
+.marquee2 .track .line-text {
+  font-size: 24px;
+  color: white !important;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+}
+@media (max-width: 1440px) {
+  .marquee2 .track .line-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1440px) and (max-width: 768px) {
+  .marquee2 .track .line-text {
+    font-size: 14px;
+  }
 }
 
 @keyframes marquee {
@@ -416,6 +450,16 @@ input[type=range]::-moz-range-thumb {
 }
 .sticky-section:nth-child(4) .description-girl-part p span {
   color: #FB531F;
+}
+.sticky-section:nth-child(4) .swiper-slide {
+  transform: scale(0.99);
+  transition: 0.2s all;
+  border-radius: 20px;
+}
+.sticky-section:nth-child(4) .swiper-slide:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px #FB531F;
+  cursor: pointer;
 }
 .sticky-section:nth-child(4) .swiper-slide .slide-item-description {
   border: 1px solid #FB531F;
@@ -676,6 +720,8 @@ footer .footer-content a {
 }
 footer .footer-content a:hover {
   color: #FB531F;
+  padding-left: 20px;
+  border-left: 5px solid #FB531F;
 }
 footer .footer-content .footer-by {
   border-top: 2px solid #FB531F;
